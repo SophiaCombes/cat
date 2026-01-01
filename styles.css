@@ -205,11 +205,18 @@
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 5px;
+  margin-top: 0;
   padding: 10px 0;
+  padding-top: 5px;
 }
 
+/* Keep dropdown open when hovering over the dropdown trigger or the dropdown content */
 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Also keep it open when directly hovering over the content */
+.dropdown-content:hover {
   display: block;
 }
 
@@ -220,11 +227,27 @@
   padding: 10px 20px;
   background: none;
   border: none;
+  white-space: nowrap;
 }
 
 .dropdown-item:hover {
   text-decoration: underline;
   background: none;
+}
+
+/* Extend the hover area of the dropdown trigger to bridge any gap */
+.dropdown > .navbar-link {
+  position: relative;
+}
+
+.dropdown > .navbar-link::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: transparent;
 }
 
 /* Responsive styles */
