@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About - Cat</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <button class="menu-toggle" onclick="openMobileMenu()" aria-label="Open menu">☰</button>
+    <ul class="navbar-menu">
+      <li class="navbar-item">
+        <a href="index.html" class="navbar-link">home</a>
+      </li>
+      <li class="navbar-item dropdown">
+        <a href="#" class="navbar-link">shop</a>
+        <div class="dropdown-content">
+          <a href="#" class="dropdown-item">Link 1</a>
+          <a href="#" class="dropdown-item">Link 2</a>
+          <a href="#" class="dropdown-item">Link 3</a>
+          <a href="#" class="dropdown-item">Link 4</a>
+        </div>
+      </li>
+      <li class="navbar-item">
+        <a href="about.html" class="navbar-link active">about</a>
+      </li>
+      <li class="navbar-item">
+        <a href="contact.html" class="navbar-link">contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Mobile Overlay -->
+<div id="mobileOverlay" class="mobile-overlay" onclick="closeMobileMenu()"></div>
+
+<!-- Mobile Sidebar -->
+<div id="mobileSidebar" class="mobile-sidebar">
+  <button class="mobile-sidebar-close" onclick="closeMobileMenu()" aria-label="Close menu">×</button>
+  <ul class="mobile-menu">
+    <li class="mobile-menu-item">
+      <a href="index.html" class="mobile-menu-link">home</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#" class="mobile-menu-link" onclick="toggleMobileDropdown(event)">shop</a>
+      <div class="mobile-dropdown-content">
+        <a href="#" class="mobile-dropdown-item">Link 1</a>
+        <a href="#" class="mobile-dropdown-item">Link 2</a>
+        <a href="#" class="mobile-dropdown-item">Link 3</a>
+        <a href="#" class="mobile-dropdown-item">Link 4</a>
+      </div>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="about.html" class="mobile-menu-link active">about</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="contact.html" class="mobile-menu-link">contact</a>
+    </li>
+  </ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
