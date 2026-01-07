@@ -1,4 +1,4 @@
-/* Custom styles extracted from index.html */
+
 
 /* Sidebar styles */
 #mySidebar {
@@ -6,17 +6,10 @@
   z-index: 2;
 }
 
-/* Image header styles */
-.w3-display-container img {
-  width: 100%;
-  min-height: 350px;
-  max-height: 600px;
-}
-
 /* Navbar styles */
 .navbar {
-  background-color: #8B4513; /* Brown color */
-  padding: 15px 0;
+  background-color: #664832;
+  padding: 30px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -270,4 +263,166 @@
   .dropdown:hover .dropdown-content {
     display: none;
   }
+}
+
+
+
+
+/* NAVBAR END -------------------------------------------------------------- */
+
+
+
+.w3-display-container img {
+  width: 100%;
+  min-height: 350px;
+  max-height: 600px;
+}
+
+
+/* DISPLAY PRODUCTS START -------------------------------------------------------------- */
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.product-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.product-name {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: -20px;
+}
+
+.product-price {
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* DISPLAY PRODUCTS END -------------------------------------------------------------- */
+
+/* ABOUT START -------------------------------------------------------------- */
+
+.about {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  padding: 5px;
+}
+.about div {
+  padding: 0px;
+}
+.about div.header {
+  grid-area: header;
+  text-align: center;
+}
+.about div.about-img {
+  grid-area: menu;
+}
+.about div.content {
+  grid-area: content;
+}
+.about div.learn-more {
+  grid-area: footer;
+  text-align: right;  
+}
+
+
+/* ABOUT END -------------------------------------------------------------- */
+
+
+/* FACTS START -------------------------------------------------------------- */
+
+
+
+/* FACTS END -------------------------------------------------------------- */
+
+/* FAQ START -------------------------------------------------------------- */
+
+
+
+/* FAQ END -------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ABOUT US PAGE START --------------------------------------------------------------------------------------------------------------- */
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #1111114e;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.247);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
 }
